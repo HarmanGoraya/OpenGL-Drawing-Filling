@@ -526,11 +526,7 @@ DrawCall(GLFWwindow* window, int algo)
     int   width, height;
     glfwGetFramebufferSize(window, &width, &height);
     ratio = width / (float)height;
-    //glViewport(250, 0, width, height);
-    //glClear(GL_COLOR_BUFFER_BIT);
-    //glMatrixMode(GL_PROJECTION);
-    //glLoadIdentity();
-    //glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
+   
 
     for(int j = 0;j<polygons.size();j++){
         for(int i = 0;i<polygons[j].clipped.size();i++){
